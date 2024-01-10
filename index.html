@@ -1,0 +1,1294 @@
+<!--
+
+
+Hit RUN to see this project in action!
+
+Feel free to edit the HTML and CSS to make it your own. You can also check the README.md file to know more.
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dario Curjak - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar-sticker3.png" alt="Dario Curjak" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Dario Curjak</h1>
+
+          <p class="title">Senior SDET</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:dario.curjak@hotmail.com" class="contact-link">dario.curjak@hotmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+385996986336" class="contact-link">+385 (99) 698-6336</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="03-06-1989">03 June, 1989</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Karlovac, Croatia</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/dario.curjak" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/darioCuc/" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/dario.currjack/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/dariocurjak/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificates</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Senior SDET from Karlovac, Croatia, bringing over 8 years of rich experience in test automation and quality assurance. 
+            My expertise lies in a broad range of frameworks including Playwright, Selenium WebDriver, CodeceptJS, Puppeteer, and WebdriverIO,                complemented by a solid foundation in Java, JavaScript, and TypeScript. 
+          </p>
+
+          <p>
+            Driven by the challenge of uncovering edge cases, I excel in enhancing software quality, focusing on meticulous detail and innovative             problem-solving. 
+          </p>
+
+          <p>
+            In my career, I've demonstrated a commitment to continuous learning and adapting, ensuring that my contributions not only meet but                exceed the evolving demands of the tech industry.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Test Automation Development</h4>
+
+                <p class="service-item-text">
+                  Advanced test automation solutions for enhanced software quality and performance.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/manual testing.svg" alt="manual test icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Manual Testing</h4>
+
+                <p class="service-item-text">
+                  Detail-focused manual testing to uphold the highest quality assurance standards.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/QA.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">QA Engineering</h4>
+
+                <p class="service-item-text">
+                  Ensuring superior software quality through expert QA engineering practices.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">References</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Alen Teskera" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Alen Teskera</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Dario is one of the few amazing Automation Engineers I have had the opportunity to meet. He is very quick in understanding the product and knows exactly how it will be used by our clients. He has a great ability to find nasty bugs in our functionalities. I am mostly impressed by his quest for knowledge and continuous improvement in his education and skills set. Ambitious and confident, but also a very good listener and an exceptional communicator. On top all of this, he has a pleasant personality and always puts a smile on your face.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/marko-memoji.png" alt="Marko Salkic" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Marko Salkic</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Working alongside Dario has been a remarkable experience. His expertise in test automation is unparalleled, consistently demonstrating not only technical proficiency but also a unique ability to anticipate user behavior and system vulnerabilities. Dario's dedication to quality assurance has significantly uplifted our project outcomes. What truly sets him apart, however, is his leadership quality and team spirit. He's always ready to lend a hand or share his knowledge, making complex tasks seem manageable. His positive attitude and sense of humor make even the most challenging days enjoyable. Dario is, without a doubt, an invaluable asset to any team.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/my-avatar-sticker1.png" alt="Danijel Cizek" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Danijel Cizek</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Having Dario on the team has been a game changer. His analytical skills and attention to detail are exceptional. He approaches every project with a strategic mindset, ensuring that all test automation processes are streamlined and effective. His contributions have not only improved our systems but also enhanced team productivity. Dario’s ability to communicate complex technical concepts in an easily understandable manner is a rare quality that has been beneficial for our entire team. Beyond his technical skills, Dario's empathetic and supportive nature fosters a collaborative and positive work environment. He's not just a colleague but a mentor and friend to many.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Jasmin Music" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jasmin Music</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Dario stands out as a Senior SDET for his innovative approach to problem-solving and his deep understanding of various testing frameworks. His work ethic is exemplary, and he consistently delivers results that exceed expectations. Dario's proactive approach in identifying and resolving potential issues before they escalate is commendable. His commitment to excellence is evident in every project he undertakes. Aside from his professional prowess, Dario's interpersonal skills are equally impressive. He has a way of making everyone feel included and valued, contributing significantly to team morale and cohesion. His positive influence and professional integrity are truly inspiring.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Alen Teskera" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Alen Teskera</h4>
+
+              <time datetime="2023-01-12">12 January, 2023</time>
+
+              <div data-modal-text>
+                <p>
+                  Dario is one of the few amazing Automation Engineers I have had the opportunity to meet. He is very quick in understanding the product and knows exactly how it will be used by our clients. He has a great ability to find nasty bugs in our functionalities. I am mostly impressed by his quest for knowledge and continuous improvement in his education and skills set. Ambitious and confident, but also a very good listener and an exceptional communicator. On top all of this, he has a pleasant personality and always puts a smile on your face.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/veed-logo.png" alt="veed logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Yoast-logo2.png" alt="yoast logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/nextgen_clearing_logo.png" alt="ngc logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/lana-karlovacka-tiskara2.png" alt="lana logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Senior SDET @ VEED Ltd.</h4>
+
+              <span>April 2022 — Present</span>
+
+              <p class="timeline-text resume-point">
+                Contributing to the development of the best video editing platform on the market by developing test automation
+                coverage across multiple projects.
+              </p>
+              <p class="timeline-text resume-point">
+                Creating Veeds’ test automation framework using Playwright and writing code in TypeScript. Developing end-to-end
+                regression automated tests that run on CI/CD pipelines (GitHub Actions).
+              </p>
+
+              <p class="timeline-text resume-point">
+                Performing comprehensive code reviews and providing valuable feedback to all test automation engineers, while also
+                taking an active role in mentoring junior and mid-level test automation engineers.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Creating extensive Notion documentation, Github Pull Request description templates and bug reporting templates to
+                improve the accuracy of bug tracking.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Setting up best testing practices both for automated tests and manual tests.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Collaborate with the Editor, Nexus and internal teams at Veed to enhance the user experience of video editing, asset
+                management, onboarding and platform functionalities.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Contribute to UI/UX decision-making process, leveraging expertise in user-centred design principles and
+                collaborating with cross-functional teams to ensure an optimal user experience and interface design.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Implement an API integration for our automated test suite to update test cases in Tuskr test management platform
+                upon completion, to enhance real-time tracking and accuracy.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Set up automated test run reports to be delivered directly to a designated Slack channel, ensuring prompt team
+                updates and efficient response management.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Writing test specifications for automated tests.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Test Automation Engineer @ Yoast BV.</h4>
+
+              <span>October 2021 — April 2022</span>
+
+              <p class="timeline-text resume-point">
+               Developed a robust suite of automated tests using JavaScript, CodecsptJS, WebdriverIO, & Puppeteer.
+              </p>
+
+              <p class="timeline-text resume-point">
+               Took ownership of test automation development in the company, resulting in improved product quality and reduced
+                manual testing efforts.
+              </p>
+
+              <p class="timeline-text resume-point">
+               Conceived and developed tailored automated testing solutions for Yoast's WordPress ecosystem, enhancing the
+                reliability of WordPress page and plugin deployments.
+              </p>
+
+              <p class="timeline-text resume-point">
+               Advanced Yoast's web platform and Yoast Academy's quality initiatives by devising automated tests that improved user
+                experience and platform stability, ensuring a robust educational offering.
+              </p>
+
+              <p class="timeline-text resume-point">
+               Implemented a new automation testing framework (Playwright) to Yoast-s repository.
+              </p>
+
+              <p class="timeline-text resume-point">
+               Contributed to UI/UX decision making process.
+
+              </p>
+
+              <p class="timeline-text resume-point">
+               Collaborated closely with cross functional teams, including developers, product managers, and quality assurance, to
+                gather requirements, define test strategies and ensure alignment with overall project goals.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Test Automation Engineer @ Nextgen Clearing Ltd.</h4>
+
+              <span>March 2019 — Septempber 2021</span>
+
+              <p class="timeline-text resume-point">
+                Specialised in automating tests across diverse platforms, including the financial clearing platform FCH and the digital roaming agreement platform IOTRON.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Led test automation development, changing technologies and creating a new approach and framework from scratch (Selenium Webdriver written in Java), providing efficient and saleable solutions for test automation needs.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Recognised as the go-to expert for guiding the direction of test automation development at NGC, actively participated in strategic discussions with team management, influencing key decisions and shaping the future of our testing methodologies.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Developed and executed performance and load testing strategies, utilising tools such as JMeter and Gatling, to identify and address potential performance bottlenecks, resulting in improved application performance and scalability.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Took the lead in test automation code development, conducted comprehensive code reviews, guided fellow automation developers, and facilitated knowledge sharing within the team.
+              </p>
+
+              <p class="timeline-text resume-point">
+                Participated in candidate selection processes.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">QA Engineer @ Lana</h4>
+
+              <span>July 2015 — February 2019</span>
+
+              <p class="timeline-text resume-point">
+                Contributed to improving quality processes and ensuring successful product releases through manual application regression testing.
+              </p>
+
+              <p class="timeline-text resume-point">
+                 Wrote test specializations and collaborated on content development projects.
+              </p>
+
+              <p class="timeline-text resume-point">
+                 Contributed to more efficient and faster regression testing cycles
+              </p>
+
+              <p class="timeline-text resume-point">
+                 Assisted in the creation and maintenance of test environments, including data setup and configuration, to support accurate and efficient testing activities.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Polytechnic of Rijeka</h4>
+
+              <span>2016 — 2020</span>
+
+              <p class="timeline-text">
+                Bachelor of Computer Sciences and Information Technology.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technical school Karlovac</h4>
+
+              <span>2004 — 2008</span>
+
+              <p class="timeline-text">
+                Finished Computer technician program, honing skills essential for IT and CS professionals.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Test Automation Development</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Playwright</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">TypeScript</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">JavaScript</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Manual Testing</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Selenium Webdriver</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">QA Enginnering</h5>
+                <data value="100">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Team Leading</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Test Automation</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Test Automation</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/GitHub-Logo.png" alt="Dario Curjak Porfolio Page" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dario Curjak Porfolio Page</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://github.com/darioCuc/Web-Development-Projects">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/GitHub-Logo.png" alt="Web Development Course Practice" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Web Development Project Course</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="test automation">
+              <a href="https://github.com/darioCuc/SwagLabs-Playwright">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/GitHub-Logo.png" alt="swag labs playwright" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Swag Labs - Test Automation</h3>
+
+                <p class="project-category">Test Automation</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="test automation">
+              <a href="https://github.com/darioCuc/Scylla">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/GitHub-Logo.png" alt="scylla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Scylla - Test Automation</h3>
+
+                <p class="project-category">Test Automation</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="test automation">
+              <a href="https://github.com/darioCuc/Zumo">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/GitHub-Logo.png" alt="zumo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Zumo - Api Test Automation</h3>
+
+                <p class="project-category">Test Automation</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="test automation">
+              <a href="https://github.com/darioCuc/Gamdom">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/GitHub-Logo.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gamdom - Test Automation</h3>
+
+                <p class="project-category">Test Automation</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CERTIFICATES
+      -->
+
+      <article class="blog" data-page="certificates">
+
+        <header>
+          <h2 class="h2 article-title">Certificates</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="https://www.linkedin.com/learning/artificial-intelligence-foundations-machine-learning-22345868/introduction-to-ai-foundations-machine-learning-course">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Artificial Intelligence Foundations- Machine Learning.jpeg" alt="Artificial Intelligence     Foundations: Machine Learning" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">LinkedIn Learning</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="12-2023">Dec, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Artificial Intelligence Foundations: Machine Learning</h3>
+
+                  <p class="blog-text">
+                    Introduction to AI foundations: Machine learning course
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.udemy.com/certificate/UC-f05d68b6-0d42-486e-84d0-96177fc13adb/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Automated Software Testing with Python.jpg" alt="Automated Software Testing with Python" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Udemy</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="12-2023">Dec, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Automated Software Testing with Python</h3>
+
+                  <p class="blog-text">
+                    Automated software testing with Python, BDD, Selenium WebDriver, and Postman, focusing on web applications
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.udemy.com/certificate/UC-9f9ca2f5-59c7-4a0e-90bb-5458fc8ea74e/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Automated Software Testing with Playwright.jpg" alt="Automated Software Testing with Playwright" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="06-2022">Jun, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Automated Software Testing with Playwright</h3>
+
+                  <p class="blog-text">
+                    Learned Playwright an open source testing framework from Microsoft and also the best alternative to Cypress
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.udemy.com/certificate/UC-d04675b6-155f-43ee-871f-bac924750528/">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Automated Software Testing with Puppeteer.jpg" alt="Automated Software Testing with Puppeteer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Udemy</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="Nov 2021">Nov, 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Automated Software Testing with Puppeteer</h3>
+
+                  <p class="blog-text">
+                    Learn everything you need to know about Puppeteer, from installation and setup to advanced features and patterns.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-91f3769e-7282-44ab-bec3-173acaae14d2.jpg?v=1634849825000">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Get Started with CodeceptJS 3, Playwright & WebdriverIO.jpg" alt="CodeceptJS 3, Playwright & WebdriverIO.jpg" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Udemy</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="10-2021">Oct, 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Get Started with CodeceptJS, Playwright & WebdriverIO</h3>
+
+                  <p class="blog-text">
+                    Course to get started with automated testing using CodeceptJS 3 with Playwright & WebdriverIO along side API testing.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-20e36cbe-bfa5-4cff-9f54-0fc16180a9e8.jpg?v=1608734186000">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Build-Deploy-Test-wth-Jenkins.jpg" alt="Build, Deploy & Test with Jenkins" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Udemy</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="12-2020">Dec, 2020</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Build, Deploy & Test with Jenkins</h3>
+
+                  <p class="blog-text">
+                    Learn Jenkins 2.0 for end-to-end testing of applications and websites.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-75aae2ff-b10a-433f-a743-e84c0cfae39e.jpg?v=1608682885000">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Automated Software Testing with Selenium Webdriver and Java.jpg" alt="Selenium WebDriver with Java -Basics to Advanced+Frameworks" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Udemy</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="12-2020">Dec, 2020</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Selenium WebDriver with Java -Basics to Advanced+Frameworks</h3>
+
+                  <p class="blog-text">
+                    Course covers Java Basics core + Selenium Webdriver + Advanced Selenium + Framework design ( TestNG, ANT, Pageobject, Maven, Jenkins, Excel Datadriven, Cucumber, log4j ) + Selenium Grid + DataBase Testing + Performance Testing on Selenium scripts + Mobile testing Basics
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d15.5553!3d45.4929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47647bc7966e3c99%3A0x4dbf6079468a4b0!2sKarlovac%2C%20Croatia!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+            width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

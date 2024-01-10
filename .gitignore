@@ -1,0 +1,38 @@
+# Dependency directory
+node_modules/
+
+# Environment variables
+.env
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+
+# Build output
+dist/
+build/
+
+# NPM configstore
+.config
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Nix cache
+.cache/nix/
+
+# Replit cache and configurations
+.cache/replit/
+
+# Node modules
+.cache/typescript/node_modules/
