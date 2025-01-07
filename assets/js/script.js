@@ -123,16 +123,46 @@ const formBtn = document.querySelector("[data-form-btn]");
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
   formInputs[i].addEventListener("input", function () {
-
-    // check form validation
     if (form.checkValidity()) {
       formBtn.removeAttribute("disabled");
     } else {
       formBtn.setAttribute("disabled", "");
     }
-
   });
 }
+
+// Handle form submission
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  // Show loading state
+  formBtn.disabled = true;
+  formBtn.querySelector('span').textContent = 'Sending...';
+
+  // Prepare template parameters
+  const templateParams = {
+    from_name: form.querySelector('input[name="fullname"]').value,
+    from_email: form.querySelector('input[name="email"]').value,
+    message: form.querySelector('textarea[name="message"]').value
+  };
+
+  // Send email using EmailJS
+  emailjs.send("service_36vlsd9", "template_b2jb9e6", templateParams).then(
+    function () {
+      // Show success message
+      alert("Message sent successfully!");
+      form.reset();
+      formBtn.querySelector("span").textContent = "Send Message";
+      formBtn.disabled = true;
+    },
+    function (error) {
+      // Show error message
+      alert("Failed to send message. Please try again.");
+      formBtn.disabled = false;
+      formBtn.querySelector("span").textContent = "Send Message";
+    }
+  );
+});
 
 
 
